@@ -125,3 +125,7 @@ Route::view('others/notFound', 'others.notFound')->name('notFound');
 Route::view('others/user-profile', 'others.user-profile')->name('user-profile');
 Route::view('others/starter', 'starter')->name('starter');
 Route::view('others/faq', 'others.faq')->name('faq');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
